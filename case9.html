@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html>
+<style>
+	@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background-color: black;
+	margin-right: 20;
+}
+
+h1{
+	position: fixed;
+	left:50px;
+	font-size: 30pt;
+	font-family: NotoSerifKR;
+	color:white;
+  z-index: 1;
+}
+
+.index{
+	position: fixed;
+	top: 80px;
+	left:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+}
+
+
+.return{
+	position: fixed;
+	top: 25px;
+	right:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+	cursor: pointer;
+}
+
+
+
+
+.switch{
+	position: fixed;
+	top: 60px;
+	right:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+	cursor: pointer;
+}
+
+p{
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color: white
+}
+
+
+a { 
+	text-decoration:none;
+}
+
+a:link {
+  color : black;
+}
+
+a:visited {
+  color : black;
+}
+a:hover {
+  color : white;
+}
+/*a:active {
+  color : green;
+}
+*/
+
+.re:link {
+  color : white;
+}
+
+.re:visited {
+  color : white;
+}
+
+
+#mydiv1-1 {
+  position: absolute;
+  top:280px;
+  left:150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv1-2 {
+  position: absolute;
+  top:340px;
+  left:180px;
+  z-index: 99;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-3 {
+  position: absolute;
+  top:420px;
+  left:200px;
+  z-index: 98;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-4 {
+  position: absolute;
+  top:480px;
+  left:100px;
+  z-index: 97;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-5 {
+  position: absolute;
+  top:540px;
+  left:230px;
+  z-index: 96;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-6 {
+  position: absolute;
+  top:600px;
+  left:100px;
+  z-index: 95;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-7 {
+  position: absolute;
+  top:660px;
+  left:250px;
+  z-index: 94;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-8 {
+  position: absolute;
+  top:720px;
+  left:100px;
+  z-index: 93;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-9 {
+  position: absolute;
+  top:780px;
+  left:70px;
+  z-index: 92;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*----------------중앙------------*/
+
+#mydiv2-1 {
+  position: absolute;
+  top:280px;
+  left:1100px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-2 {
+  position: absolute;
+  top:340px;
+  left:1100px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-2:hover{
+	z-index: 100;
+}
+
+
+#mydiv2-3 {
+  position: absolute;
+  top:440px;
+  left:1150px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-4 {
+  position: absolute;
+  top:480px;
+  left:1150px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-5 {
+  position: absolute;
+  top:540px;
+  left:1050px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-6 {
+  position: absolute;
+  top:600px;
+  left:1000px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-7 {
+  position: absolute;
+  top:660px;
+  left:1050px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-8 {
+  position: absolute;
+  top:720px;
+  left:1050px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-9 {
+  position: absolute;
+  top:780px;
+  left:1250px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-10 {
+  position: absolute;
+  top:380px;
+  left:1200px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv2-11 {
+  position: absolute;
+  top:550px;
+  left:1400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-12 {
+  position: absolute;
+  top:630px;
+  left:1570px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-13 {
+  position: absolute;
+  top:750px;
+  left:1400px;
+  z-index: 79;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------------동아-------------*/
+#mydiv3-1 {
+  position: absolute;
+  top:280px;
+  left:2300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv3-2 {
+  position: absolute;
+  top:340px;
+  left:2350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv3-3 {
+  position: absolute;
+  top:410px;
+  left:2300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-4 {
+  position: absolute;
+  top:480px;
+  left:2200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-5 {
+  position: absolute;
+  top:540px;
+  left:2300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-6 {
+  position: absolute;
+  top:600px;
+  left:2350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-7 {
+  position: absolute;
+  top:660px;
+  left:2300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-8 {
+  position: absolute;
+  top:720px;
+  left:2300px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-9 {
+  position: absolute;
+  top:780px;
+  left:2400px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-10 {
+  position: absolute;
+  top:380px;
+  left:2150px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*--------4 한겨레--------*/
+
+#mydiv4-1 {
+  position: absolute;
+  top:280px;
+  left:3300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv4-2 {
+  position: absolute;
+  top:350px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv4-3 {
+  position: absolute;
+  top:400px;
+  left:3300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-4 {
+  position: absolute;
+  top:460px;
+  left:3400px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-5 {
+  position: absolute;
+  top:540px;
+  left:3300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-6 {
+  position: absolute;
+  top:600px;
+  left:3400px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-7 {
+  position: absolute;
+  top:660px;
+  left:3350px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-8 {
+  position: absolute;
+  top:720px;
+  left:3350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-9 {
+  position: absolute;
+  top:780px;
+  left:3300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-10 {
+  position: absolute;
+  top:380px;
+  left:3500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv4-11 {
+  position: absolute;
+  top:550px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+/*----------경향-------*/
+
+
+#mydiv5-1 {
+  position: absolute;
+  top:280px;
+  left:4400px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv5-2 {
+  position: absolute;
+  top:350px;
+  left:4150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv5-3 {
+  position: absolute;
+  top:400px;
+  left:4200px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-4 {
+  position: absolute;
+  top:460px;
+  left:4200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-5 {
+  position: absolute;
+  top:540px;
+  left:4300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-6 {
+  position: absolute;
+  top:600px;
+  left:4350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-7 {
+  position: absolute;
+  top:660px;
+  left:4300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-8 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-9 {
+  position: absolute;
+  top:780px;
+  left:4300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-10 {
+  position: absolute;
+  top:380px;
+  left:4500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-11 {
+  position: absolute;
+  top:550px;
+  left:4400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+#mydiv5-12 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------------한국----------*/
+
+#mydiv6-1 {
+  position: absolute;
+  top:280px;
+  left:5300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv6-2 {
+  position: absolute;
+  top:350px;
+  left:5350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv6-3 {
+  position: absolute;
+  top:400px;
+  left:5300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-4 {
+  position: absolute;
+  top:460px;
+  left:5200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-5 {
+  position: absolute;
+  top:540px;
+  left:5300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-6 {
+  position: absolute;
+  top:600px;
+  left:5350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-7 {
+  position: absolute;
+  top:660px;
+  left:5300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-8 {
+  position: absolute;
+  top:720px;
+  left:5400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------서울---------*/
+
+#mydiv7-1 {
+  position: absolute;
+  top:280px;
+  left:6300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv7-2 {
+  position: absolute;
+  top:350px;
+  left:6350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-3 {
+  position: absolute;
+  top:400px;
+  left:6300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-4 {
+  position: absolute;
+  top:460px;
+  left:6250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-5 {
+  position: absolute;
+  top:540px;
+  left:6300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-6 {
+  position: absolute;
+  top:600px;
+  left:6350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-7 {
+  position: absolute;
+  top:660px;
+  left:6300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-8 {
+  position: absolute;
+  top:720px;
+  left:6400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-9 {
+  position: absolute;
+  top:780px;
+  left:6300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-10 {
+  position: absolute;
+  top:380px;
+  left:6500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*--------8 kbs-------*/
+
+#mydiv8-1 {
+  position: absolute;
+  top:280px;
+  left:7300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv8-2 {
+  position: absolute;
+  top:350px;
+  left:7350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv8-3 {
+  position: absolute;
+  top:400px;
+  left:7300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-4 {
+  position: absolute;
+  top:460px;
+  left:7200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-5 {
+  position: absolute;
+  top:540px;
+  left:7300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-6 {
+  position: absolute;
+  top:600px;
+  left:7350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-7 {
+  position: absolute;
+  top:660px;
+  left:7300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------9 mbc----------*/
+
+#mydiv9-1 {
+  position: absolute;
+  top:280px;
+  left:8300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv9-2 {
+  position: absolute;
+  top:350px;
+  left:8350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv9-3 {
+  position: absolute;
+  top:400px;
+  left:8300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-4 {
+  position: absolute;
+  top:460px;
+  left:8200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-5 {
+  position: absolute;
+  top:540px;
+  left:8300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-6 {
+  position: absolute;
+  top:600px;
+  left:8350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-7 {
+  position: absolute;
+  top:660px;
+  left:8300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*------------10 sbs------------*/
+
+#mydiv10-1 {
+  position: absolute;
+  top:280px;
+  left:9300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv10-2 {
+  position: absolute;
+  top:350px;
+  left:9150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv10-3 {
+  position: absolute;
+  top:400px;
+  left:9300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-4 {
+  position: absolute;
+  top:460px;
+  left:9200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-5 {
+  position: absolute;
+  top:540px;
+  left:9300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-6 {
+  position: absolute;
+  top:600px;
+  left:9350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-7 {
+  position: absolute;
+  top:660px;
+  left:9300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*-------------*/
+
+#fakediv {
+  position: absolute;
+  top:460px;
+  left:9950px;
+  z-index: 88;
+  background-color: transparent;
+  text-align: center;  
+  border: transparent;
+  color: transparent;
+}
+
+#mydivheader {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left:25px;
+  padding-right:25px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1.5px solid black;
+  border-radius: 17px;
+  font-size: 16pt;
+  color: black;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.8), 0 3px 15px 0 rgba(0,0,0,0.2);
+}
+
+#mydivheader:hover{
+	background-color: grey;
+	z-index: 120;
+}
+
+#masterdiv {
+	white-space:nowrap; 
+    overflow-x: auto; }
+
+ .chosun{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:350px
+}
+
+.jungang{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:1350px
+}
+
+.donga{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:2550px
+}
+
+.hani{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:3550px	
+}
+
+.khan{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:4500px	
+}
+
+.hankook{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:5500px	
+}
+
+.seoul{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:6550px	
+}
+
+.kbs{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:7550px	
+}
+
+.mbc{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:8550px	
+}
+
+.sbs{
+  position: absolute; 
+  font-size: 17pt;
+  top:180px;
+  left:9550px	
+}
+
+
+
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 50%;
+  z-index: 0;
+}
+
+
+#press {
+  white-space:nowrap; 
+    overflow-x: auto; }
+</style>
+<body>
+
+<h1>사건 9</h1>
+<img src="images/09.jpg" id="bg" alt="">
+<!-- <p class="index">헤드라인을 움직여 보세요 어쩌구</p> -->
+<!-- <p class="index">원하는/눈에띄는/재미있는 헤드라인을 찾아보세요!
+다 봤으면 버튼을 눌러 언론사별로도 보세요/ 오른쪽 상단 버튼을 눌러 언론사별로 볼 수 있습니다. or 정리된 모습을 보고 싶다면..</p> -->
+<div id= press>
+<p class="chosun">조선일보</p>
+<p class="jungang">중앙일보</p>
+<p class="donga">동아일보</p>
+<p class="hani">한겨레</p>
+<p class="khan">경향신문</p>
+<p class="hankook">한국일보</p>
+<p class="seoul">서울신문</p>
+<p class="kbs">KBS</p>
+<p class="mbc">MBC</p>
+<p class="sbs">SBS</p>
+
+</div>
+<p class="return"><a href ="https://sartre4751.github.io/case_100_main/case100_main.html" class="re">돌아가기</a></p>
+<!-- <p class="switch">바꾸기</p> -->
+
+<div id="fakediv"> 
+  ...
+</div>
+
+<!-------------조선------------- -->
+<div id="masterdiv">
+<div id="mydiv1-1">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/21/2020022101558.html" target="_blank">
+신천지 관련 확진자 74명으로 늘어...대구 교인 의심자만 544명 </a> </div>
+</div>
+
+<div id="mydiv1-2">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/24/2020022400204.html" target="_blank">
+ 신천지 "우리도 피해자"… 대구 670명 여전히 연락안돼 </a></div>
+</div>
+
+<div id="mydiv1-3">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/23/2020022301172.html" target="_blank">신천지 “우리는 우한 코로나 최대 피해자…혐오·비난 자제 요청" </a></div>
+</div>
+
+<div id="mydiv1-4">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/25/2020022504197.html" target="_blank">유시민 "대구시장, 코로나 막을 생각 없는 듯… 신천지는 종교 자유 말할 자격 없어"</a> </div>
+</div>
+
+<div id="mydiv1-5">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/23/2020022301290.html" target="_blank">“신천지 강제 해산해달라” 청와대 국민청원 하루 만에 20만 돌파</a></div>
+</div>
+
+<div id="mydiv1-6">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/24/2020022400046.html" target="_blank"> 당청, 메르스땐 "정부 무능 탓"… 코로나엔 신천지·언론·태극기 탓 </a> </div>
+</div>
+
+<div id="mydiv1-7">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/21/2020022102162.html" target="_blank"> '신천지 교주' 이만희 "이번 병마 사건은 급성장 저지 위한 마귀의 짓" 첫 입장</a></div>
+</div>
+
+
+<!-- ----------------중앙------------ -->
+
+<div id="mydiv2-1">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23712578" target="_blank">
+그날 전국서 모인 대구교회…신천지는 몇명 왔는지 이미 안다 </a> </div>
+</div>
+
+<div id="mydiv2-2">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23714938" target="_blank">
+신천지 못 믿겠다는 이재명, 신천지 과천본부 강제진입 "명단 달라"</a></div>
+</div>
+
+<div id="mydiv2-3">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23717632" target="_blank">[단독]'30명 감염' 순례단···한 단원 아들 신천지 교인이었다</a></div>
+</div>
+
+<div id="mydiv2-4">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23715110" target="_blank">대구 안갔다던 용인 첫 확진자, GPS 방문 기록 들통···신천지 연관 부인  </a> </div>
+</div>
+
+<div id="mydiv2-5">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23713019" target="_blank">"대구 신천지 방문" 광주서 쓰러진 20대···도주극까지 벌였다 </a></div>
+</div>
+
+
+
+<div id="mydiv2-6">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23713094" target="_blank">연락 안 되는 신천지 신도 670명…코로나 악몽 이어지는 대구·경북</a></div>
+</div>
+
+<div id="mydiv2-7">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23713101" target="_blank">"정부 역학조사관 여력 없어" 울산 신천지 방문 뒤늦게 파악</a></div>
+</div>
+
+<div id="mydiv2-8">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23712777" target="_blank">마지막 '청정지' 울산마저···신천지 대구교회 방문한 여성 확진 </a></div>
+</div>
+
+<div id="mydiv2-9">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23711492" target="_blank">포항 확진자 신천지 예배 후 과외 두 번…수업 직후 병원행 </a></div>
+</div>
+
+
+<!-- ----------------동아------------ -->
+
+<div id="mydiv3-1">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200222/99818979/1" target="_blank">대구 예배후 곳곳 흩어져… 확진 10명중 6명꼴 ‘신천지’ 관련 </a> </div>
+</div>
+
+<div id="mydiv3-2">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200228/99929665/1" target="_blank">
+“허위명단으로 혼선”…대구시, 신천지 대구교회 책임자 고발 </a></div>
+</div>
+
+<div id="mydiv3-3">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200224/99854497/1" target="_blank">우연의 일치? ‘코로나 확산’ 중심엔 ‘종교’…신천지·온천교회</a></div>
+</div>
+
+<div id="mydiv3-4">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200221/99807200/1" target="_blank">“내 주변에 신천지 교회가?”…‘신천지 알림앱’ 나왔다 </a> </div>
+</div>
+
+<div id="mydiv3-5">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200223/99829757/2" target="_blank">대구시장 “대구 폐렴 아냐…아픔을 조롱하지 말아달라”</a></div>
+</div>
+
+<div id="mydiv3-6">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200227/99896312/1" target="_blank">“우한 지교회 우리 성도는 안걸려” 신천지 녹취록 공개 </a> </div>
+</div>
+
+<div id="mydiv3-7">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200227/99903485/1" target="_blank">자가격리 어기고 신천지교 숨기고…확진 공무원들 ‘일탈’</a></div>
+</div>
+
+<div id="mydiv3-8">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200228/99916349/1" target="_blank">신천지피해자연대 “정부조사 방해” 이만희 고발</a> </div>
+</div>
+
+
+<!-- ----------------4 한겨레------------ -->
+
+<div id="mydiv4-1">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/yeongnam/929486.html" target="_blank">
+'코로나19 확진' 대구 보건소 감염예방팀장도 신천지 신도</a> </div>
+</div>
+
+<div id="mydiv4-2">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/society/religious/929223.html" target="_blank">
+'코로나19' 확산 발화점 '신천지'는 어떤 교단? </a></div>
+</div>
+
+<div id="mydiv4-3">
+  <div id="mydivheader"><a href="https://m.hani.co.kr/arti/area/yeongnam/929676.html" target="_blank">
+[속보] 권영진 대구시장 “대구 확진자 77.8% 신천지” </a> </div>
+</div>
+
+<div id="mydiv4-4">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/yeongnam/929535.html" target="_blank">
+'코로나 확진' 대구 경찰관도 알고 보니 신천지 신도 </a></div>
+</div>
+
+<div id="mydiv4-4">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/gangwon/929266.html" target="_blank">
+강원까지 뚫렸다…춘천 첫 확진자 2명 신천지 대구교회 방문</a></div>
+</div>
+
+<div id="mydiv4-5">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/capital/929746.html" target="_blank">
+이재명, 신천지 신도 3만3천여명 명단 직접 확보 “수도권 확산</a> </div>
+</div>
+
+<div id="mydiv4-6">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/society/religious/929179.html" target="_blank">
+'신천지' 이만희 총회장 “코로나19 병마 사건은 마귀의 짓”</a></div>
+</div>
+
+
+<div id="mydiv4-7">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/society/society_general/930110.html" target="_blank">
+“신도 수 숨겨 역학조사 방해”…이만희 신천지 총회장 검찰에 고발당해
+</a></div>
+</div>
+
+
+
+<!-- ----------------5 경향------------ -->
+
+
+
+<div id="mydiv5-1">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002211839001" target="_blank">
+[르포]“신천지 대구교회는 지금도 외부 감시 중”···교회 인근은 ‘유령도시’</a> </div>
+</div>
+
+<div id="mydiv5-2">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002232217015" target="_blank">
+ 경향신문
+신천지 “신도들에게 연락 중”…지역 사회는 여전히 불안감 확산</a> </div>
+</div>
+
+<div id="mydiv5-3">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002221046001" target="_blank">
+ [속보]신천지 신도 9336명 중 1261명, "코로나19 의심 증세”···“710명 미응답” </a> </div>
+</div>
+
+<div id="mydiv5-4">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002232157015" target="_blank">
+ ‘대구 폐렴’ ‘TK 코로나’라니요…“힘든 시민들에 상처 주지 마세요”</a> </div>
+</div>
+
+<div id="mydiv5-5">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002252305001" target="_blank">
+ 코로나19 확진자 나온 대구시청 별관도 폐쇄···해당건물 직원들 재택근무 </a> </div>
+</div>
+
+<div id="mydiv5-6">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002202209005" target="_blank">
+ 대구 선별진료소 갔더니 “대기시간 장담 못해”…시가지 텅텅 </a> </div>
+</div>
+
+<div id="mydiv5-7">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002212112005 " target="_blank">
+방역망 밖 감염자 1명이 일으킨 연쇄효과…전방위로 퍼졌다 </a> </div>
+</div>
+
+<div id="mydiv5-8">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002202138005 " target="_blank">
+ 특정 지역·종교·집단 혐오 ‘카더라’…“코로나19 공포 키우는 부채질 그만”</a> </div>
+</div>
+
+<!-- <div id="mydiv5-9">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202001070600025 " target="_blank">
+ [경향이 찍은 오늘]1월3일 추미애 장관 “가장 힘들고 어렵다 했던···”</a> </div>
+</div> -->
+
+<!-- ----------------6 한국------------ -->
+<div id="mydiv6-1">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002231748061930"target="_blank">
+신천지 대구교회 예배 참석한 타지인 117명이 전국 확산 매개</a> </div>
+</div>
+
+<div id="mydiv6-2">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002231771760418" target="_blank">
+신천지 “우리가 최대 피해자, 비방 말라”</a></div>
+</div>
+
+<div id="mydiv6-3">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002260716781154" target="_blank">유시민 “신천지는 종교의 자유 말할 자격 없어”</a></div>
+</div>
+
+<div id="mydiv6-4">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002251768045326" target="_blank">왜 그들은 정체를 감추나… '신천지'가 뭐길래</a> </div>
+</div>
+
+<div id="mydiv6-5">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002241751313761" target="_blank">“신천지 아닌데요” 잡아떼는 신자… 도처에 위장 카페ㆍ문화센터 어쩌나</a> </div>
+</div>
+
+<div id="mydiv6-6">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002211696777177" target="_blank">내 주변에 신천지가? '코로나19' 확산에 신천지 위치 알림 앱 화제</a></div>
+</div>
+
+<div id="mydiv6-7">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002261271364074" target="_blank">외신도 신천지 독특한 교리에 주목 "이걸 사이비라고 하더라"</a> </div>
+</div>
+
+<div id="mydiv6-8">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002231669766861" target="_blank">“신천지 비방했다” 목사 협박하고 교인들 폭행까지</a> </div>
+</div>
+
+<!-- ----------------7 서울------------ -->
+
+<div id="mydiv7-1">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200220500118" target="_blank">
+신천지 대구교회 90명 유증상 답변…396명 연락두절 </a> </div>
+</div>
+
+<div id="mydiv7-2">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200228500090" target="_blank">
+[속보] “대구 신천지 신도 중 확진자 비율 매우 높아”
+</a></div>
+</div>
+
+<div id="mydiv7-3">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200224500176" target="_blank">보건소 감염팀장, 확진 뒤에야 “신천지”…동료 3명 추가 확진
+</a></div>
+</div>
+
+<div id="mydiv7-4">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200222500028" target="_blank">[속보] ‘집단 발병’ 신천지 대구교회 1261명 코로나 의심 증상
+</a> </div>
+</div>
+
+<div id="mydiv7-5">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200226006036" target="_blank">신천지 교인 21만명 전수조사… 경기도, 과천본부 강제 진입</a> </div>
+</div>
+
+<div id="mydiv7-6">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200221500047" target="_blank">서울 신천지교회 폐쇄…신천지 위치알림 앱도 주목</a> </div> 
+</div>
+
+ <div id="mydiv7-7">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200228500106" target="_blank">31번 신천지 확진자 “저 때문에 많은 이들 목숨 건져 다행” </a> </div>
+</div>
+
+<div id="mydiv7-8">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200227500097" target="_blank">코로나 확진 80%가 신천지 신도…이만희는 어디에</a> </div>
+</div>
+
+<div id="mydiv7-9">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200223500003" target="_blank">“제발 신상정보 퍼뜨리지 말라” ‘신천지 남친’ 삼성전자 확진자 호소</a> </div> 
+</div>
+
+<!-- <div id="mydiv7-10">
+  <div id="mydivheader"><a href="http://www.munhwa.com/news/view.html?no=20200119MW192816526462" target="_blank">'윤석열 사단’ 물갈이될까… 추미애發 인사태풍에 숨죽인 검찰</a> </div> 
+</div> -->
+
+
+<!-- ----------------8 kbs------------ -->
+<div id="mydiv8-1">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4388663" target="_blank">
+확진자 절반 이상 '대구 신천지 교회' 관련…어디서 유입?
+</a> </div>
+</div>
+
+<div id="mydiv8-2">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4387233s" target="_blank">
+신천지 “모든 방법 동원해 협조”…신도 전체명단 제출은 거부</a></div>
+</div>
+
+<div id="mydiv8-3">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4387175" target="_blank"> '신천지 강제 해체' 청와대 국민청원, 하루 만에 25만 넘게 동의</a></div>
+</div>
+
+<div id="mydiv8-4">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4387125" target="_blank">대구지검 서부지청 수사관 코로나19 확진</a> </div>
+</div>
+
+<div id="mydiv8-5">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4391257" target="_blank">우한서 온 신도 없다더니…우한서 입국한 신천지 교인 42명 확인</a> </div>
+</div>
+
+<div id="mydiv8-6">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4385307" target="_blank">신천지 전문가 “신천지 폐쇄성이 국가방역망에 커다란 구멍내”</a> </div> 
+</div>
+
+ <div id="mydiv8-7">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4390106" target="_blank">신천지 신도 엄마 확진됐는데…자녀 검사 안내 못 받아
+</a> </div>
+</div>
+<!-- ----------------9 mbc------------ -->
+<div id="mydiv9-1">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nw930/article/5663520_32517.html " target="_blank">
+광주 또 확진…"대구 신천지 다녀왔다"</a> </div>
+</div>
+
+<div id="mydiv9-2">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5666209_32524.html" target="_blank">
+'대구·경북' 450명 또 확진…"신천지 82% 양성"</a></div>
+</div>
+
+<div id="mydiv9-3">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5664827_32524.html" target="_blank">'과천 신천지' 전파 통로되나…"신도 명단 확보 안 돼"</a></div>
+</div>
+
+<div id="mydiv9-4">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5664369_32524.html" target="_blank">신천지 울산 교회에서도 예배…뒤늦게 공개 논란</a> </div>
+</div>
+
+<div id="mydiv9-5">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5664108_32524.html" target="_blank">청도 대남병원과 신천지 교회…'연결고리'는?</a></div>
+</div>
+
+<div id="mydiv9-6">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5666918_32524.html" target="_blank">신천지 숨기고 자가격리 어기고…공무원 '늑장 고백'</a> </div>
+</div>
+
+<div id="mydiv9-7">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5664367_32524.html" target="_blank">독특한 포교 방식…나도 모르는 사이 접촉?</a></div>
+</div>
+
+<!-- ----------------10 sbs------------ -->
+<div id="mydiv10-1">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005663969" target="_blank">
+'7∼10일 중대고비'…신천지대구교회 등 확산고리 차단에 달려</a> </div>
+</div>
+
+<div id="mydiv10-2">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005660551" target="_blank">
+코로나에 놀란 지자체들, 신천지 전수조사…일부 지역선 시설폐쇄</a></div>
+</div>
+
+<div id="mydiv10-3">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005664019" target="_blank">코로나19 확진 '59.8% 신천지교회, 14.8% 청도대남병원' 연관</a></div>
+</div>
+
+<div id="mydiv10-4">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005661254" target="_blank">신천지, 24일 서울서 기자회견…이만희 교주는 불참</a> </div>
+</div>
+
+<div id="mydiv10-5">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005670918" target="_blank">광주 신천지 교인, 택시 타고 "자가격리 답답해서 나왔다"</a> </div>
+</div>
+
+
+<div id="mydiv10-6">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005672639" target="_blank"> ["새누리당에 대한 명예훼손" 미래통합당, 신천지 이만희 고소</a> </div>
+</div>
+
+</div>
+<script>	
+dragElement(document.getElementById("mydiv1-1"));
+dragElement(document.getElementById("mydiv1-2"));
+dragElement(document.getElementById("mydiv1-3"));
+dragElement(document.getElementById("mydiv1-4"));
+dragElement(document.getElementById("mydiv1-5"));
+dragElement(document.getElementById("mydiv1-6"));
+dragElement(document.getElementById("mydiv1-7"));
+dragElement(document.getElementById("mydiv1-8"));
+dragElement(document.getElementById("mydiv1-9"));
+
+dragElement(document.getElementById("mydiv2-1"));
+dragElement(document.getElementById("mydiv2-2"));
+dragElement(document.getElementById("mydiv2-3"));
+dragElement(document.getElementById("mydiv2-4"));
+dragElement(document.getElementById("mydiv2-5"));
+dragElement(document.getElementById("mydiv2-6"));
+dragElement(document.getElementById("mydiv2-7"));
+dragElement(document.getElementById("mydiv2-8"));
+dragElement(document.getElementById("mydiv2-9"));
+dragElement(document.getElementById("mydiv2-10"));
+dragElement(document.getElementById("mydiv2-11"));
+dragElement(document.getElementById("mydiv2-12"));
+dragElement(document.getElementById("mydiv2-13"));
+
+dragElement(document.getElementById("mydiv3-1"));
+dragElement(document.getElementById("mydiv3-2"));
+dragElement(document.getElementById("mydiv3-3"));
+dragElement(document.getElementById("mydiv3-4"));
+dragElement(document.getElementById("mydiv3-5"));
+dragElement(document.getElementById("mydiv3-6"));
+dragElement(document.getElementById("mydiv3-7"));
+dragElement(document.getElementById("mydiv3-8"));
+dragElement(document.getElementById("mydiv3-9"));
+dragElement(document.getElementById("mydiv3-10"));
+
+dragElement(document.getElementById("mydiv4-1"));
+dragElement(document.getElementById("mydiv4-2"));
+dragElement(document.getElementById("mydiv4-3"));
+dragElement(document.getElementById("mydiv4-4"));
+dragElement(document.getElementById("mydiv4-5"));
+dragElement(document.getElementById("mydiv4-6"));
+dragElement(document.getElementById("mydiv4-7"));
+dragElement(document.getElementById("mydiv4-8"));
+dragElement(document.getElementById("mydiv4-9"));
+dragElement(document.getElementById("mydiv4-10"));
+dragElement(document.getElementById("mydiv4-11"));
+
+dragElement(document.getElementById("mydiv5-1"));
+dragElement(document.getElementById("mydiv5-2"));
+dragElement(document.getElementById("mydiv5-3"));
+dragElement(document.getElementById("mydiv5-4"));
+dragElement(document.getElementById("mydiv5-5"));
+dragElement(document.getElementById("mydiv5-6"));
+dragElement(document.getElementById("mydiv5-7"));
+dragElement(document.getElementById("mydiv5-8"));
+dragElement(document.getElementById("mydiv5-9"));
+dragElement(document.getElementById("mydiv5-10"));
+dragElement(document.getElementById("mydiv5-11"));
+dragElement(document.getElementById("mydiv5-12"));
+
+dragElement(document.getElementById("mydiv6-1"));
+dragElement(document.getElementById("mydiv6-2"));
+dragElement(document.getElementById("mydiv6-3"));
+dragElement(document.getElementById("mydiv6-4"));
+dragElement(document.getElementById("mydiv6-5"));
+dragElement(document.getElementById("mydiv6-6"));
+dragElement(document.getElementById("mydiv6-7"));
+
+dragElement(document.getElementById("mydiv7-1"));
+dragElement(document.getElementById("mydiv7-2"));
+dragElement(document.getElementById("mydiv7-3"));
+dragElement(document.getElementById("mydiv7-4"));
+dragElement(document.getElementById("mydiv7-5"));
+dragElement(document.getElementById("mydiv7-6"));
+dragElement(document.getElementById("mydiv7-7"));
+dragElement(document.getElementById("mydiv7-8"));
+dragElement(document.getElementById("mydiv7-9"));
+dragElement(document.getElementById("mydiv7-10"));
+
+dragElement(document.getElementById("mydiv8-1"));
+dragElement(document.getElementById("mydiv8-2"));
+dragElement(document.getElementById("mydiv8-3"));
+dragElement(document.getElementById("mydiv8-4"));
+dragElement(document.getElementById("mydiv8-5"));
+dragElement(document.getElementById("mydiv8-6"));
+dragElement(document.getElementById("mydiv8-7"));
+
+dragElement(document.getElementById("mydiv9-1"));
+dragElement(document.getElementById("mydiv9-2"));
+dragElement(document.getElementById("mydiv9-3"));
+dragElement(document.getElementById("mydiv9-4"));
+dragElement(document.getElementById("mydiv9-5"));
+
+dragElement(document.getElementById("mydiv10-1"));
+dragElement(document.getElementById("mydiv10-2"));
+dragElement(document.getElementById("mydiv10-3"));
+dragElement(document.getElementById("mydiv10-4"));
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+</body>
+</html>
+
